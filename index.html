@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserva AI | Intelligent Booking, Scheduling, & Workforce Management</title>
+  <!-- Meta Tags for SEO -->
+  <meta name="description" content="Optimize appointments, workforce allocation, resource reservations, and capacity planning through AI-driven automation. Boost efficiency and eliminate no-shows.">
+  <meta name="keywords" content="intelligent booking, workforce scheduling, resource reservation, capacity optimization, dynamic pricing, SaaS scheduling">
+  
+  <!-- Google Fonts: Plus Jakarta Sans for premium typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container">
+      <span class="badge-new">NEW</span>
+      <span>Reserva AI 2.0: Introducing Intelligent Capacity Auto-Scaling.</span>
+      <a href="#demo-playground" class="learn-more-link">Try Live Simulator <i data-lucide="arrow-right"></i></a>
+    </div>
+  </div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="#" class="logo">
+        <div class="logo-icon">
+          <i data-lucide="layers" class="icon-brand"></i>
+        </div>
+        <span class="logo-text">Reserva<span class="text-accent">AI</span></span>
+      </a>
+      
+      <!-- Desktop Nav -->
+      <nav class="desktop-nav">
+        <a href="#features" class="nav-link">Features</a>
+        <a href="#industries" class="nav-link">Industries</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#demo-playground" class="nav-link">Interactive Demo</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="#pricing" class="btn btn-secondary btn-sm desktop-only">Sign In</a>
+        <a href="#demo-playground" class="btn btn-primary btn-sm">Book a Demo</a>
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-nav-toggle" aria-label="Toggle navigation" id="mobile-toggle">
+          <i data-lucide="menu" id="toggle-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <a href="#" class="logo">
+        <div class="logo-icon"><i data-lucide="layers" class="icon-brand"></i></div>
+        <span class="logo-text">Reserva<span class="text-accent">AI</span></span>
+      </a>
+      <button class="drawer-close" id="drawer-close"><i data-lucide="x"></i></button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="#features" class="drawer-link">Features</a>
+      <a href="#industries" class="drawer-link">Industries</a>
+      <a href="#how-it-works" class="drawer-link">How It Works</a>
+      <a href="#demo-playground" class="drawer-link">Interactive Demo</a>
+      <a href="#pricing" class="drawer-link">Pricing</a>
+      <hr class="drawer-divider">
+      <a href="#" class="btn btn-secondary w-full text-center">Sign In</a>
+      <a href="#demo-playground" class="btn btn-primary w-full text-center">Book a Demo</a>
+    </nav>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <div class="hero-content scroll-reveal">
+        <div class="hero-badge">
+          <i data-lucide="sparkles" class="icon-sparkles"></i>
+          <span>Next-Gen Scheduling Engine</span>
+        </div>
+        <h1 class="hero-title">
+          Intelligent Booking &amp; Workforce <span class="text-gradient">Optimization</span> powered by AI.
+        </h1>
+        <p class="hero-subtitle">
+          Optimize appointments, staff schedules, room reservations, and capacity management automatically. Stop losing revenue to no-shows and inefficient scheduling.
+        </p>
+        <div class="hero-ctas">
+          <a href="#demo-playground" class="btn btn-primary btn-lg">Start Free Trial <i data-lucide="chevron-right"></i></a>
+          <a href="#how-it-works" class="btn btn-secondary btn-lg"><i data-lucide="play-circle"></i> See How It Works</a>
+        </div>
+        <div class="hero-trust">
+          <span class="trust-text">Trusted by hyper-growth businesses worldwide:</span>
+          <div class="trust-logos">
+            <span class="trust-logo"><i data-lucide="activity"></i> CareFlow</span>
+            <span class="trust-logo"><i data-lucide="shield"></i> ApexSecure</span>
+            <span class="trust-logo"><i data-lucide="truck"></i> AutoFleet</span>
+            <span class="trust-logo"><i data-lucide="graduation-cap"></i> EduLearn</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Hero Interactive Mockup -->
+      <div class="hero-image-wrapper scroll-reveal delay-200">
+        <div class="mockup-frame">
+          <div class="mockup-header">
+            <div class="mockup-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="mockup-url">app.reserva.ai/dashboard</div>
+          </div>
+          <div class="mockup-body">
+            <!-- Simulated Dashboard Preview -->
+            <div class="db-grid">
+              <div class="db-sidebar">
+                <div class="db-logo"><i data-lucide="layers"></i></div>
+                <div class="db-menu-item active"><i data-lucide="calendar"></i></div>
+                <div class="db-menu-item"><i data-lucide="users"></i></div>
+                <div class="db-menu-item"><i data-lucide="trending-up"></i></div>
+                <div class="db-menu-item"><i data-lucide="settings"></i></div>
+              </div>
+              <div class="db-main">
+                <div class="db-header">
+                  <div>
+                    <h4 class="db-title">AI Optimization Engine</h4>
+                    <p class="db-subtext">All resources &amp; scheduling pipelines healthy</p>
+                  </div>
+                  <div class="db-status-badge"><span class="pulse-dot"></span> Active</div>
+                </div>
+                <div class="db-stats">
+                  <div class="stat-card">
+                    <span class="stat-label">Capacity Utilization</span>
+                    <span class="stat-val">94.8%</span>
+                    <span class="stat-trend trend-up"><i data-lucide="trending-up"></i> +12.4%</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-label">No-Show Rate</span>
+                    <span class="stat-val">1.2%</span>
+                    <span class="stat-trend trend-down"><i data-lucide="trending-down"></i> -84%</span>
+                  </div>
+                  <div class="stat-card">
+                    <span class="stat-label">Daily Revenue Impact</span>
+                    <span class="stat-val">+$2,450</span>
+                    <span class="stat-trend trend-up"><i data-lucide="trending-up"></i> AI pricing active</span>
+                  </div>
+                </div>
+                <div class="db-chart-placeholder">
+                  <div class="chart-header">
+                    <span>Demand Forecast vs. Staff Capacity</span>
+                    <div class="chart-legend">
+                      <span class="legend-item"><span class="legend-color blue"></span>Demand</span>
+                      <span class="legend-item"><span class="legend-color teal"></span>Staffing</span>
+                    </div>
+                  </div>
+                  <div class="bar-chart">
+                    <div class="bar-col" style="--val: 40%"><span class="bar-label">08:00</span></div>
+                    <div class="bar-col" style="--val: 65%"><span class="bar-label">10:00</span></div>
+                    <div class="bar-col peak" style="--val: 95%"><span class="bar-label">12:00</span><span class="peak-badge">Peak</span></div>
+                    <div class="bar-col" style="--val: 80%"><span class="bar-label">14:00</span></div>
+                    <div class="bar-col" style="--val: 70%"><span class="bar-label">16:00</span></div>
+                    <div class="bar-col" style="--val: 50%"><span class="bar-label">18:00</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem / Solution Section -->
+  <section class="problem-solution-section" id="problem-solution">
+    <div class="container">
+      <div class="section-title-wrapper text-center scroll-reveal">
+        <h2 class="section-title">The Scheduling Bottleneck Costing You Thousands</h2>
+        <p class="section-subtitle">Manual tools, calendars that don't speak to staff availability, and empty slots from no-shows are draining your operational margins.</p>
+      </div>
+
+      <div class="vs-container scroll-reveal">
+        <!-- Manual Process Column -->
+        <div class="vs-card vs-left">
+          <div class="vs-header">
+            <div class="vs-icon-badge bad"><i data-lucide="frown"></i></div>
+            <h3>The Old, Fragmented Way</h3>
+          </div>
+          <ul class="vs-list">
+            <li>
+              <div class="vs-item-icon"><i data-lucide="x-circle"></i></div>
+              <div class="vs-item-text">
+                <strong>No-Show Revenue Loss:</strong> Missed bookings because customers forgot, and you didn't follow up in time.
+              </div>
+            </li>
+            <li>
+              <div class="vs-item-icon"><i data-lucide="x-circle"></i></div>
+              <div class="vs-item-text">
+                <strong>Workforce Overlaps &amp; Gaps:</strong> Overworked employees, under-staffed busy periods, and manual shift trading nightmares.
+              </div>
+            </li>
+            <li>
+              <div class="vs-item-icon"><i data-lucide="x-circle"></i></div>
+              <div class="vs-item-text">
+                <strong>Double-Booked Resources:</strong> Double booking meeting rooms, vehicles, or physical equipment due to separate systems.
+              </div>
+            </li>
+            <li>
+              <div class="vs-item-icon"><i data-lucide="x-circle"></i></div>
+              <div class="vs-item-text">
+                <strong>Static Pricing Waste:</strong> Charging the same flat rate during high-demand peak slots as during empty Tuesday mornings.
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="vs-divider">
+          <span>VS</span>
+        </div>
+
+        <!-- Reserva AI Process Column -->
+        <div class="vs-card vs-right">
+          <div class="vs-header">
+            <div class="vs-icon-badge good"><i data-lucide="smile"></i></div>
+            <h3>The Intelligent Reserva AI Way</h3>
+          </div>
+          <ul class="vs-list">
+            <li>
+              <div class="vs-item-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="vs-item-text">
+                <strong>Zero-Waste No-Show Defense:</strong> Auto-reminders, automated waitlists, and prepayments drop no-show rates below 1.5%.
+              </div>
+            </li>
+            <li>
+              <div class="vs-item-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="vs-item-text">
+                <strong>AI-Driven Auto-Scheduling:</strong> Smart workforce planning allocates staff matching skills, availability, and labor rules.
+              </div>
+            </li>
+            <li>
+              <div class="vs-item-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="vs-item-text">
+                <strong>Unified Resource Pool:</strong> Unified asset tracking locks down rooms, equipment, and staff simultaneously without cross-talk issues.
+              </div>
+            </li>
+            <li>
+              <div class="vs-item-icon"><i data-lucide="check-circle-2"></i></div>
+              <div class="vs-item-text">
+                <strong>Dynamic Supply-Demand Pricing:</strong> Algorithms auto-adjust pricing instantly to maximize yield during prime hours.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-title-wrapper text-center scroll-reveal">
+        <span class="section-tagline">Advanced Platform Features</span>
+        <h2 class="section-title">Built to automate the complexity of scaling services</h2>
+        <p class="section-subtitle">From simple individual bookings to multi-location, multi-resource logistics. Reserva AI does it all.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon-box">
+            <i data-lucide="calendar-check"></i>
+          </div>
+          <h3 class="feature-card-title">Appointment Management</h3>
+          <p class="feature-card-desc">Eliminate manual booking workflows with elegant, custom appointment flows that validate client data and handle secure deposits.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon-box">
+            <i data-lucide="users"></i>
+          </div>
+          <h3 class="feature-card-title">Intelligent Workforce Scheduling</h3>
+          <p class="feature-card-desc">Automatically schedule and assign personnel shifts, matching specific client requirements, qualifications, workload caps, and availability.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon-box">
+            <i data-lucide="package"></i>
+          </div>
+          <h3 class="feature-card-title">Resource Reservation</h3>
+          <p class="feature-card-desc">Book rooms, vehicles, courts, or devices in synchronization with the operator. Never double-book high-value assets again.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon-box">
+            <i data-lucide="trending-up"></i>
+          </div>
+          <h3 class="feature-card-title">Dynamic Pricing</h3>
+          <p class="feature-card-desc">Our intelligent pricing engine modifies rates automatically in real-time based on current reservations, time-slots, and peak hours.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon-box">
+            <i data-lucide="message-square"></i>
+          </div>
+          <h3 class="feature-card-title">Automated Notifications</h3>
+          <p class="feature-card-desc">Nudge customers and staff with context-aware SMS/Email alerts for booking confirmations, waitlists, changes, and review links.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card scroll-reveal">
+          <div class="feature-icon-box">
+            <i data-lucide="bar-chart-3"></i>
+          </div>
+          <h3 class="feature-card-title">Capacity Optimization</h3>
+          <p class="feature-card-desc">Forecast demand patterns, visualize resource utilization analytics, and identify bottlenecks ahead of time with dashboard metrics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section class="industries-section" id="industries">
+    <div class="container">
+      <div class="section-title-wrapper text-center scroll-reveal">
+        <span class="section-tagline">Tailored Solutions</span>
+        <h2 class="section-title">Designed for businesses where time and space matter</h2>
+        <p class="section-subtitle">We custom-fit scheduling templates and rules to match the demands of specialized operations.</p>
+      </div>
+
+      <!-- Tab Layout for Industries -->
+      <div class="industries-tabs-container scroll-reveal">
+        <div class="industries-nav" id="industries-nav">
+          <button class="industry-tab-btn active" data-industry="healthcare">
+            <i data-lucide="heart-pulse"></i> Healthcare
+          </button>
+          <button class="industry-tab-btn" data-industry="hospitality">
+            <i data-lucide="hotel"></i> Hospitality
+          </button>
+          <button class="industry-tab-btn" data-industry="sports">
+            <i data-lucide="trophy"></i> Sports &amp; Rec
+          </button>
+          <button class="industry-tab-btn" data-industry="car-rentals">
+            <i data-lucide="car"></i> Car Rentals
+          </button>
+          <button class="industry-tab-btn" data-industry="professional">
+            <i data-lucide="briefcase"></i> Professional
+          </button>
+          <button class="industry-tab-btn" data-industry="salons">
+            <i data-lucide="sparkles"></i> Salons
+          </button>
+          <button class="industry-tab-btn" data-industry="education">
+            <i data-lucide="graduation-cap"></i> Education
+          </button>
+        </div>
+
+        <div class="industry-content-card" id="industry-content-card">
+          <div class="industry-info">
+            <h3 class="industry-title" id="ind-title">HIPAA-Compliant Healthcare Scheduling</h3>
+            <p class="industry-desc" id="ind-desc">Ensure seamless patient booking, automated doctor shifts, emergency slot protection, and real-time room capacity tracking while maintaining absolute patient privacy.</p>
+            <ul class="industry-bullets" id="ind-bullets">
+              <li><i data-lucide="check" class="bullet-icon"></i> Smart room & equipment sync (e.g. MRI, Ultrasound)</li>
+              <li><i data-lucide="check" class="bullet-icon"></i> Doctor schedule optimization matches specialist credentials</li>
+              <li><i data-lucide="check" class="bullet-icon"></i> Automatic SMS updates reduce no-shows</li>
+            </ul>
+            <a href="#demo-playground" class="btn btn-secondary btn-sm industry-cta">Explore Healthcare Template</a>
+          </div>
+          <div class="industry-visual">
+            <div class="visual-mockup-wrapper">
+              <div class="inner-mockup healthcare-bg">
+                <div class="badge-float"><i data-lucide="shield-check"></i> HIPAA Compliant</div>
+                <!-- Mini schedule block -->
+                <div class="mock-schedule-list">
+                  <div class="mock-item active">
+                    <span class="time">09:00 AM</span>
+                    <span class="detail">Dr. Sarah Jenkins - MRI Room A</span>
+                    <span class="status">Confirmed</span>
+                  </div>
+                  <div class="mock-item">
+                    <span class="time">10:30 AM</span>
+                    <span class="detail">Dr. Sarah Jenkins - Consultation Suite 3</span>
+                    <span class="status warning">In Progress</span>
+                  </div>
+                  <div class="mock-item">
+                    <span class="time">11:15 AM</span>
+                    <span class="detail">Dr. Robert Chen - MRI Room A</span>
+                    <span class="status waiting">Waitlist Filled</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section class="how-it-works" id="how-it-works">
+    <div class="container">
+      <div class="section-title-wrapper text-center scroll-reveal">
+        <span class="section-tagline">Quick Setup</span>
+        <h2 class="section-title">Automate your business in four simple steps</h2>
+        <p class="section-subtitle">Integrating with your tech stack and staff calendar rules takes less than an afternoon.</p>
+      </div>
+
+      <div class="steps-grid scroll-reveal">
+        <!-- Step 1 -->
+        <div class="step-card">
+          <div class="step-number-bubble">01</div>
+          <div class="step-icon"><i data-lucide="link-2"></i></div>
+          <h3 class="step-title">Connect</h3>
+          <p class="step-desc">Sync calendars (Google, Outlook, Apple) and existing resource listings into our central dashboards.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="step-card">
+          <div class="step-number-bubble">02</div>
+          <div class="step-icon"><i data-lucide="sliders-horizontal"></i></div>
+          <h3 class="step-title">Configure</h3>
+          <p class="step-desc">Define services, qualifications, equipment requirements, pricing rules, and staff buffer parameters.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="step-card">
+          <div class="step-number-bubble">03</div>
+          <div class="step-icon"><i data-lucide="zap"></i></div>
+          <h3 class="step-title">Automate</h3>
+          <p class="step-desc">Our AI matching algorithms take over, scheduling staff, booking rooms, and optimizing pricing in seconds.</p>
+        </div>
+        <!-- Step 4 -->
+        <div class="step-card">
+          <div class="step-number-bubble">04</div>
+          <div class="step-icon"><i data-lucide="line-chart"></i></div>
+          <h3 class="step-title">Optimize</h3>
+          <p class="step-desc">Monitor live occupancy data, staff utilization analytics, and revenue metrics on an all-in-one console.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Live Demo Playground (Interactive Widget) -->
+  <section class="playground-section" id="demo-playground">
+    <div class="container">
+      <div class="playground-grid">
+        <div class="playground-info scroll-reveal">
+          <span class="playground-tag">LIVE DEMO PLAYGROUND</span>
+          <h2 class="playground-title">Interact with our AI Booking Logic</h2>
+          <p class="playground-text">
+            Test the Reservation automation. Select a simulated service below. Watch in real-time as the AI algorithm instantly cross-references availability, auto-assigns matching personnel, locks a room asset, calculates dynamic pricing, and composes an automated reminder notification.
+          </p>
+          <div class="playground-services-list">
+            <h4>Select a Service:</h4>
+            <div class="service-selectors">
+              <button class="service-selector-btn active" data-service="service-mri">
+                <i data-lucide="heart-pulse"></i> Diagnostic MRI Scan
+              </button>
+              <button class="service-selector-btn" data-service="service-dining">
+                <i data-lucide="chef-hat"></i> Private Chef Dining
+              </button>
+              <button class="service-selector-btn" data-service="service-car">
+                <i data-lucide="key"></i> Luxury Car Rental
+              </button>
+              <button class="service-selector-btn" data-service="service-consulting">
+                <i data-lucide="briefcase"></i> Legal Consultation
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulated AI Pipeline Panel -->
+        <div class="playground-preview scroll-reveal">
+          <div class="pipeline-card">
+            <div class="pipeline-header">
+              <span class="pipeline-header-title"><i data-lucide="cpu" class="sparkle-anim"></i> AI Booking Allocation Pipeline</span>
+              <span class="pipeline-status" id="pipeline-status">Idle</span>
+            </div>
+            
+            <div class="pipeline-steps">
+              <!-- Step: Resource Assignment -->
+              <div class="pipeline-step-item" id="pipe-resource">
+                <div class="step-icon-indicator"><i data-lucide="shield-alert"></i></div>
+                <div class="step-body">
+                  <h5>Step 1: Check Room/Equipment</h5>
+                  <p class="step-detail" id="pipe-detail-res">Checking MRI Suite 4 capacity...</p>
+                </div>
+              </div>
+
+              <!-- Step: Staff Matching -->
+              <div class="pipeline-step-item" id="pipe-staff">
+                <div class="step-icon-indicator"><i data-lucide="user"></i></div>
+                <div class="step-body">
+                  <h5>Step 2: Assign Qualified Staff</h5>
+                  <p class="step-detail" id="pipe-detail-staff">Searching for certified radiologist on shift...</p>
+                </div>
+              </div>
+
+              <!-- Step: Dynamic Pricing -->
+              <div class="pipeline-step-item" id="pipe-pricing">
+                <div class="step-icon-indicator"><i data-lucide="dollar-sign"></i></div>
+                <div class="step-body">
+                  <h5>Step 3: Dynamic Price Check</h5>
+                  <p class="step-detail" id="pipe-detail-price">Base Rate: $250. Peak demand modifier: +$45.</p>
+                </div>
+              </div>
+
+              <!-- Step: Reminder Generated -->
+              <div class="pipeline-step-item" id="pipe-sms">
+                <div class="step-icon-indicator"><i data-lucide="message-square"></i></div>
+                <div class="step-body">
+                  <h5>Step 4: SMS Alert Staged</h5>
+                  <p class="step-detail" id="pipe-detail-sms">Message: "Hi Alex, your MRI Scan is scheduled..."</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Simulated SMS Device -->
+            <div class="sms-preview-device">
+              <div class="sms-device-header">
+                <div class="notch"></div>
+              </div>
+              <div class="sms-screen">
+                <div class="sms-contact-header">
+                  <span class="contact-avatar">R</span>
+                  <span class="contact-name">Reserva Auto-Alert</span>
+                </div>
+                <div class="sms-bubble" id="sms-text-content">
+                  Selecting service...
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof / Testimonials Section -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrapper text-center scroll-reveal">
+        <span class="section-tagline">Client Success</span>
+        <h2 class="section-title">Adopted by operational leaders</h2>
+        <p class="section-subtitle">Read how organizations optimized scheduling, boosted capacity, and recovered lost revenue.</p>
+      </div>
+
+      <div class="testimonials-grid scroll-reveal">
+        <!-- Testimonial 1 -->
+        <div class="testimonial-card">
+          <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+          <p class="testimonial-text">"Before Reserva AI, coordinating our MRI rooms and specialist radiologist calendars was a manual, error-prone mess. Our no-show rate plummeted from 12% to under 1% in the first month."</p>
+          <div class="author-block">
+            <div class="author-avatar auth-hc"></div>
+            <div>
+              <h4 class="author-name">Dr. Marcus Vance</h4>
+              <p class="author-title">Operations Director, Metro Health</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="testimonial-card">
+          <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+          <p class="testimonial-text">"Managing luxury rental fleets was highly complex. Reserva AI integrated our inventory, scheduling, and staff cleaning workflows seamlessly. The dynamic pricing engine alone increased revenue by 22%."</p>
+          <div class="author-block">
+            <div class="author-avatar auth-car"></div>
+            <div>
+              <h4 class="author-name">Clara Ostling</h4>
+              <p class="author-title">CEO, Onyx Rental Group</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Testimonial 3 -->
+        <div class="testimonial-card">
+          <div class="stars"><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i><i data-lucide="star"></i></div>
+          <p class="testimonial-text">"We operate multiple courts, coach shifts, and equipment rentals. Reserva AI handles the complex inter-dependencies between them effortlessly. Customer booking takes seconds."</p>
+          <div class="author-block">
+            <div class="author-avatar auth-sports"></div>
+            <div>
+              <h4 class="author-name">Julio Ramirez</h4>
+              <p class="author-title">General Manager, Smash Tennis Arena</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section" id="pricing">
+    <div class="container">
+      <div class="section-title-wrapper text-center scroll-reveal">
+        <span class="section-tagline">Simple, Transparent Pricing</span>
+        <h2 class="section-title">Plans that scale with your operations</h2>
+        <p class="section-subtitle">Start scheduling for free. Upgrade to unlock powerful multi-resource allocations and AI capacity optimization.</p>
+        
+        <!-- Toggle Monthly / Yearly -->
+        <div class="pricing-toggle-container">
+          <span class="toggle-label" id="toggle-lbl-m">Monthly</span>
+          <label class="switch">
+            <input type="checkbox" id="billing-toggle">
+            <span class="slider round"></span>
+          </label>
+          <span class="toggle-label" id="toggle-lbl-y">Yearly <span class="discount-badge">Save 20%</span></span>
+        </div>
+      </div>
+
+      <div class="pricing-grid scroll-reveal">
+        <!-- Starter Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">Starter</h3>
+            <p class="plan-desc">For small studios and local service providers.</p>
+            <div class="price-container">
+              <span class="currency">$</span>
+              <span class="price-amount" id="starter-price">29</span>
+              <span class="price-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i data-lucide="check"></i> Up to 3 staff members</li>
+              <li><i data-lucide="check"></i> 1 shared room/resource</li>
+              <li><i data-lucide="check"></i> Basic calendar synchronization</li>
+              <li><i data-lucide="check"></i> Automated email reminders</li>
+              <li class="disabled"><i data-lucide="x"></i> Smart AI Staff Matcher</li>
+              <li class="disabled"><i data-lucide="x"></i> Dynamic Pricing Engine</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#demo-playground" class="btn btn-secondary w-full">Get Started Free</a>
+          </div>
+        </div>
+
+        <!-- Growth Plan (Featured) -->
+        <div class="pricing-card featured">
+          <div class="featured-ribbon">Most Popular</div>
+          <div class="pricing-header">
+            <h3 class="plan-name">Growth</h3>
+            <p class="plan-desc">Perfect for scaling clinics, studios, and agencies.</p>
+            <div class="price-container">
+              <span class="currency">$</span>
+              <span class="price-amount" id="growth-price">79</span>
+              <span class="price-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i data-lucide="check"></i> Up to 15 staff members</li>
+              <li><i data-lucide="check"></i> 5 shared rooms/resources</li>
+              <li><i data-lucide="check"></i> Advanced auto-reminders (SMS/Email)</li>
+              <li><i data-lucide="check"></i> Smart AI Staff Matcher</li>
+              <li><i data-lucide="check"></i> Basic analytics dashboard</li>
+              <li class="disabled"><i data-lucide="x"></i> Dynamic Pricing Engine</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#demo-playground" class="btn btn-primary w-full">Start 14-Day Free Trial</a>
+          </div>
+        </div>
+
+        <!-- Enterprise Plan -->
+        <div class="pricing-card">
+          <div class="pricing-header">
+            <h3 class="plan-name">Enterprise</h3>
+            <p class="plan-desc">For multi-location networks &amp; large fleets.</p>
+            <div class="price-container">
+              <span class="currency">$</span>
+              <span class="price-amount" id="enterprise-price">199</span>
+              <span class="price-period">/mo</span>
+            </div>
+          </div>
+          <div class="pricing-features">
+            <ul>
+              <li><i data-lucide="check"></i> Unlimited staff &amp; resources</li>
+              <li><i data-lucide="check"></i> Full AI Dispatcher/Resource Matching</li>
+              <li><i data-lucide="check"></i> Dynamic Pricing Engine</li>
+              <li><i data-lucide="check"></i> Real-time capacity optimization alerts</li>
+              <li><i data-lucide="check"></i> API access &amp; webhook integrations</li>
+              <li><i data-lucide="check"></i> Dedicated Account Executive</li>
+            </ul>
+          </div>
+          <div class="pricing-footer">
+            <a href="#demo-playground" class="btn btn-secondary w-full">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner Section -->
+  <section class="cta-banner-section">
+    <div class="container">
+      <div class="cta-banner-content text-center scroll-reveal">
+        <h2 class="cta-banner-title">Ready to maximize your utilization rate?</h2>
+        <p class="cta-banner-subtitle">Join thousands of operators utilizing Reserva AI to run highly efficient, autonomous scheduling workflows.</p>
+        <div class="cta-banner-actions">
+          <a href="#demo-playground" class="btn btn-primary btn-lg light-btn">Start Free Trial <i data-lucide="arrow-right"></i></a>
+          <a href="#demo-playground" class="btn btn-outline-light btn-lg">Book a Demo</a>
+        </div>
+        <div class="cta-no-card-required">
+          <span><i data-lucide="check"></i> No credit card required</span>
+          <span><i data-lucide="check"></i> Cancel anytime</span>
+          <span><i data-lucide="check"></i> 14-day sandbox trial</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand-column">
+        <a href="#" class="logo footer-logo">
+          <div class="logo-icon"><i data-lucide="layers" class="icon-brand-footer"></i></div>
+          <span class="logo-text">Reserva<span class="text-accent">AI</span></span>
+        </a>
+        <p class="footer-brand-desc">
+          State-of-the-art booking matching, workforce scheduling, and capacity planning optimized by machine learning.
+        </p>
+        <div class="social-links">
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-nav-columns">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#demo-playground">AI Dispatcher</a></li>
+            <li><a href="#pricing">Pricing Plans</a></li>
+            <li><a href="#">Release Notes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="#industries">Healthcare</a></li>
+            <li><a href="#industries">Hospitality</a></li>
+            <li><a href="#industries">Sports &amp; Fitness</a></li>
+            <li><a href="#industries">Education</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">API Reference</a></li>
+            <li><a href="#">Security &amp; HIPAA</a></li>
+            <li><a href="#">Customer Stories</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Stay Updated</h4>
+          <p class="newsletter-sub">Get the latest optimization playbooks and scheduling hacks.</p>
+          <form class="newsletter-form" id="newsletter-form">
+            <input type="email" placeholder="Enter your email" required class="newsletter-input">
+            <button type="submit" class="newsletter-btn" aria-label="Subscribe"><i data-lucide="send"></i></button>
+          </form>
+          <p class="form-status" id="newsletter-status"></p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; 2026 Reserva AI Inc. All rights reserved. Designed for optimal peak utilization.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Settings</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JS Logic -->
+  <script src="app.js"></script>
+</body>
+</html>
